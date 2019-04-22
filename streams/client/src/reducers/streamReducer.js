@@ -7,8 +7,13 @@ import {
     EDIT_STREAM  
 } from '../actions/types';
 
+//it's better to keep the state in an object keyed by id (ease of use, performance, easier CRUD ops)
+//https://stackoverflow.com/questions/38445006/state-as-array-of-objects-vs-object-keyed-by-id
+
 export default (state = {}, action) => {
     switch(action.type) {
+        case FETCH_STREAMS:
+            return { ...state, ..._.mapKeys(action.payload, 'id') };
         case FETCH_STREAM:
             return { ...state, [action.payload.id]: action.payload };
         case CREATE_STREAM:

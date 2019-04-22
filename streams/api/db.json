@@ -4,6 +4,18 @@
       "title": "My Stream",
       "description": "This is a new stream",
       "id": 1
+    },
+    {
+      "title": "A new Stream",
+      "description": "this stream has a userId",
+      "userId": "111606231915498059751",
+      "id": 2
+    },
+    {
+      "title": "My New Stream",
+      "description": "this is programmaticaly navigating ",
+      "userId": "111606231915498059751",
+      "id": 3
     }
   ]
 }
