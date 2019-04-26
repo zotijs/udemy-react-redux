@@ -46,9 +46,15 @@ export const fetchStream = (id) => async dispatch => {
 };
 
 export const editStream = (id, formValues) => async dispatch => {
-    const response = await streams.put(`/streams/${id}`, formValues);
+    //put: updates the whole object
+    //const response = await streams.put(`/streams/${id}`, formValues);
+    //patch: updates some props of the object. (solves the api issue) using put the api clears the userId value
+    const response = await streams.patch(`/streams/${id}`, formValues);
 
     dispatch({ type: EDIT_STREAM, payload: response.data });
+
+    //programmatic navigation to get user back to streams screen using our custom history
+    history.push('/');
 };
 
 export const deleteStream = (id) => async dispatch => {

@@ -16,6 +16,9 @@ import history from '../history';
 
 //Components inside BrowserRouter (or Routers in general) with no path declared are being shown in every route
 
+//in StreamEdit Route the /:id part inside the path navigates the user to the StreamEdit page if anything is typed after the edit/ part of the url
+//we can find the value of the "id" that we are passing through the url inside the match object of the props that the router is passing to the component
+
 const App = () => {
     return (
         <div className="ui container">
@@ -23,7 +26,7 @@ const App = () => {
                 <Header />
                 <Route path="/" exact component={StreamList} />
                 <Route path="/streams/new" exact component={StreamCreate} />
-                <Route path="/streams/edit" exact component={StreamEdit} />
+                <Route path="/streams/edit/:id" exact component={StreamEdit} />
                 <Route path="/streams/delete" exact component={StreamDelete} />
                 <Route path="/streams/show" exact component={StreamShow} />
             </Router>
