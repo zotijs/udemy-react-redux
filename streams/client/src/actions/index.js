@@ -61,4 +61,6 @@ export const deleteStream = (id) => async dispatch => {
     await streams.delete(`/streams/${id}`);
 
     dispatch({ type: DELETE_STREAM, payload: id });
+    //programmatic navigation to get user back to streams screen using our custom history
+    history.push('/');
 }
