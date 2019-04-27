@@ -1,5 +1,5 @@
 /*
-Modal is a Reusable Reaact Portal Component to be used as modal window accross the whole application
+Modal is a Reusable React Portal Component to be used as modal window across the whole application
 https://reactjs.org/docs/portals.html
 In general Portals provide a first-class way to render children into a DOM node 
 that exists outside the DOM hierarchy of the parent component.
