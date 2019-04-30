@@ -15,7 +15,7 @@ Course material from Stephen Grider's [react-redux](https://www.udemy.com/react-
 	>- using [axios](https://www.npmjs.com/package/axios) to consume APIs.
 	>- using [unsplash](https://unsplash.com/developers) API for the application images.
 	>- using [css grid layout](https://www.w3schools.com/css/css_grid.asp) for the images placement.
-- **videos:** Similart to **pics** application using [youtube](https://developers.google.com/youtube/) API.
+- **videos:** Similar to **pics** application using [youtube](https://developers.google.com/youtube/) API.
 - **songs:** An introduction to [redux](https://redux.js.org/)  and [react-redux](https://react-redux.js.org/).
 - **blog:** Advanced react and redux implementation using [redux-thunk](https://www.npmjs.com/package/redux-thunk) middleware. 
 	> **Points of interest:**
